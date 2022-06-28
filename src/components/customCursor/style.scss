@@ -1,0 +1,37 @@
+.secondary-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
+
+.main-cursor {
+  mix-blend-mode: difference;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid black;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  transition: width 0.3s ease-in-out;
+}
+
+//============ Remember to add the styles below =========//
+//============ to your global scss file =================//
+// html,
+// body {
+//   *,
+//   *::after,
+//   *::before {
+//     cursor: none;
+//   }
+// }
